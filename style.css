@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.wrapper {
+  /* background-image: url(./lucas-k-wQLAGv4_OYs-unsplash.jpg); */
+  background-image: url(./fatih-kgqu_qs3B78-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative; /* Ensure content appears above video */
+}
+
+/* Background Video */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure video stays behind everything */
+  filter: blur(1px);
+}
+.game-info {
+  color: black;
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:  rgba(255, 255, 255, 0.40);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 0.5rem 3rem;
+  text-align: center;
+  font-weight: bolder;
+}
+.Xo {
+  width: 90%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.57);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  aspect-ratio: 1/1;
+}
+.box {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  aspect-ratio: 1/1;
+  font-size: 3rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box1,
+.box2,
+.box4,
+.box5 {
+  border-right: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(249, 249, 249);
+}
+.box3,
+.box6 {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+.box7,
+.box8 {
+  border-right: 2px solid rgb(255, 255, 255);
+}
+.btn {
+  color: black;
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.40);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: none;
+  font-weight: bolder;
+}
+.btn.active {
+  display: flex;
+}
+
+  .win {
+    background-color: rgb(19, 138, 19);
+    box-shadow: 0 0 15px 5px rgb(242, 216, 47);
+    border-radius: 5px;
+  }
+    
